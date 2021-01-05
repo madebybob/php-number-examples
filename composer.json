@@ -4,6 +4,14 @@
     "type": "project",
     "homepage": "https://github.com/madebybob/php-number-examples",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Bob Mulder",
+            "email": "info@madebybob.nl",
+            "homepage": "https://madebybob.nl",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "madebybob/php-number": "1.*",
         "php": "^7.4",
@@ -16,14 +24,16 @@
         "symfony/var-dumper": "^5.1",
         "vimeo/psalm": "^3.11"
     },
-    "authors": [
-        {
-            "name": "Bob Mulder",
-            "email": "info@madebybob.nl",
-            "homepage": "https://madebybob.nl",
-            "role": "Developer"
+    "autoload": {
+        "psr-4": {
+            "Number\\Example\\": "src"
         }
-    ],
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Number\\Example\\Tests\\": "tests"
+        }
+    },
     "scripts": {
         "psalm": "vendor/bin/psalm",
         "test": "vendor/bin/phpunit",
