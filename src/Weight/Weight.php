@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Number\Example\Weight;
 
-use LogicException;
 use Number\AbstractNumber;
 use Number\Exception\DivisionByZeroError;
 use Number\Formatter\Formatter;
@@ -25,13 +24,10 @@ class Weight extends AbstractNumber
 
     /**
      * @param string|float|int $value
-     * @TODO @param string $unitAbbreviation
      */
-    public static function create($value): self
+    public static function create($value, string $unitAbbreviation): self
     {
-        throw new LogicException('This method will be usable in version 2.0 of php-number when ::create() is being removed from AbstractNumber.');
-
-        //return new self($value, $unitAbbreviation);
+        return new self($value, $unitAbbreviation);
     }
 
     public function init(string $value, ?string $unitAbbreviation = null): self

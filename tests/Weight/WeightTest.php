@@ -12,6 +12,12 @@ use PHPUnit\Framework\TestCase;
 
 class WeightTest extends TestCase
 {
+    public function testCanInitializeFromStaticMethod(): void
+    {
+        $weight = Weight::create('65.98', WeightUnit::KILOGRAM);
+        $this->assertEquals('65.9800', $weight->toString());
+    }
+
     public function testCanInitializeFromString(): void
     {
         $weight = new Weight('65.98', WeightUnit::KILOGRAM);
