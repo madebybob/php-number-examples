@@ -1,5 +1,5 @@
 # PHP Number - examples
-Example of custom implementation of Number types for php-number.
+Custom Number type implementation examples using php-number.
 
 ## Testing & Php CS Fixer 
 ``` bash
