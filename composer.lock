@@ -1,0 +1,74 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b8dbea42641b2e5b38876a3e329fa936",
+    "packages": [
+        {
+            "name": "madebybob/php-number",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madebybob/php-number.git",
+                "reference": "71fb8d7c48e89e6e01dc71b848772a8ffae12eed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madebybob/php-number/zipball/71fb8d7c48e89e6e01dc71b848772a8ffae12eed",
+                "reference": "71fb8d7c48e89e6e01dc71b848772a8ffae12eed",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpro/grumphp": "^1.0",
+                "phpunit/phpunit": "^9.3",
+                "symfony/var-dumper": "^5.1",
+                "vimeo/psalm": "^3.11"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Number\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bob Mulder",
+                    "email": "info@madebybob.nl",
+                    "homepage": "https://madebybob.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Deal with numbers the right way",
+            "homepage": "https://github.com/madebybob/php-number",
+            "keywords": [
+                "madebybob",
+                "php-number"
+            ],
+            "support": {
+                "issues": "https://github.com/madebybob/php-number/issues",
+                "source": "https://github.com/madebybob/php-number/tree/1.0.0"
+            },
+            "time": "2020-12-30T11:26:31+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

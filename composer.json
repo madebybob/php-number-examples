@@ -1,0 +1,16 @@
+{
+    "name": "madebybob/php-number-examples",
+    "description": "Examples of madebybob/php-number",
+    "type": "project",
+    "require": {
+        "madebybob/php-number": "1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bob Mulder",
+            "email": "info@madebybob.nl"
+        }
+    ],
+    "minimum-stability": "dev"
+}
