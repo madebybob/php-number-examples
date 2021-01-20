@@ -69,7 +69,6 @@ class Weight extends AbstractNumber
 
     /**
      * @inheritDoc
-     * @psalm-suppress InvalidReturnType
      */
     protected function getNumberFromInput($value): Weight
     {
@@ -77,7 +76,7 @@ class Weight extends AbstractNumber
             return $value->convert($this->getUnit()->getAbbreviation());
         }
 
-        parent::getNumberFromInput($value);
+        return parent::getNumberFromInput($value);
     }
 
     // endregion
